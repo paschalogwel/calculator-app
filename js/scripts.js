@@ -21,4 +21,11 @@ $(document).ready(function() {
     var result = add(number1, number2);
     $("#output").text(result);
   });
+  $("form#subtract").submit(function(event) {
+    event.preventDefault()
+    var number1 = parseInt($("#subtract1").val());
+    var number2 = parseInt($("#subtract2").val());
+    var result = subtract(number1, number2);
+    $("#output2").text(result);
+  });
 });
