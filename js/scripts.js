@@ -35,4 +35,11 @@ $(document).ready(function() {
     var result = multiply(number1, number2);
     $("#output3").text(result);
   });
+  $("form#division").submit(function(event) {
+    event.preventDefault()
+    var number1 = parseInt($("#division1").val());
+    var number2 = parseInt($("#division2").val());
+    var result = division(number1, number2);
+    $("#output4").text(result);
+  });
 });
