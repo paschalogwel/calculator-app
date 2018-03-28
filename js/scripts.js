@@ -42,4 +42,11 @@ $(document).ready(function() {
     var result = division(number1, number2);
     $("#output4").text(result);
   });
+  $("form#modulus").submit(function(event) {
+    event.preventDefault()
+    var number1 = parseInt($("#modulus1").val());
+    var number2 = parseInt($("#modulus2").val());
+    var result = modulus(number1, number2);
+    $("#output5").text(result);
+  });
 });
